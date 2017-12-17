@@ -1,0 +1,51 @@
+Source: kpmcore
+Section: libs
+Priority: optional
+Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
+Uploaders: Jonathan Carter <jcc@debian.org>
+Build-Depends: cmake,
+               debhelper (>= 10),
+               extra-cmake-modules,
+               libatasmart-dev,
+               libblkid-dev (>= 2.30),
+               libkf5i18n-dev,
+               libkf5iconthemes-dev,
+               libkf5kio-dev,
+               libkf5service-dev,
+               libkf5widgetsaddons-dev,
+               libparted-dev,
+               pkg-config,
+               pkg-kde-tools
+Standards-Version: 4.1.1
+Homepage: https://github.com/KDE/kpmcore
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-kde/kde-extras/kpmcore.git/
+Vcs-Git: https://anonscm.debian.org/git/pkg-kde/kde-extras/kpmcore.git
+
+Package: libkpmcore6
+Architecture: linux-any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Replaces: libkpmcore3, libkpmcore4, libkpmcore5
+Breaks: libkpmcore3, libkpmcore4, libkpmcore5
+Description: KDE Partition Manager Core
+ KDE Parition Partition Manager Core (KPM core) allows
+ software to re-use common partitioning GUI tasks.
+ .
+ It is used in the generic system installer called Calamares
+ and may be used in more interfaces in the future. Right now it
+ is unlikely to be useful installed on its own.
+
+Package: libkpmcore-dev
+Section: libdevel
+Architecture: linux-any
+Depends: ${misc:Depends}, ${shlibs:Depends},
+ libkpmcore6 (= ${binary:Version}), libatasmart-dev
+Replaces: libkpmcore3-dev, libkpmcore4-dev
+Description: KDE Partition Manager Core development files
+ KDE Parition Partition Manager Core (KPM core) allows
+ software to re-use common partitioning GUI tasks.
+ .
+ It is used in the generic system installer called Calamares
+ and may be used in more interfaces in the future. Right now it
+ is unlikely to be useful installed on its own.
+ .
+ This package contains development files for kpmcore.
