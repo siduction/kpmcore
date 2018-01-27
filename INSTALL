@@ -1,0 +1,43 @@
+Building and installing KDE Partition Manager Core Library from source
+=========================================================
+
+
+1. Dependencies
+
+libparted: Either get it from http://www.gnu.org/software/parted/download.shtml
+and build it yourself or, preferably, install your distribution's packages
+(don't forget the dev-package).
+
+libblkid: Part of the util-linux project available at
+https://github.com/karelzak/util-linux
+
+libatasmart: Available from http://0pointer.de/blog/projects/being-smart.html
+
+KDE Frameworks: The minimum required version is 5.0.
+
+
+2. Configure
+
+KPMcore is built with cmake. It is recommended to build out of tree:
+After unpacking the source, create a separate build directory and run cmake there:
+
+$ tar xfj kpmcore-x.y.z.tar.bz2
+$ cd kpmcore-x.y.z
+$ mkdir build
+$ cd build
+$ cmake ..
+
+If all dependencies are met, cmake configures the build directory.
+
+
+3. Build and install
+
+Just run make and make install in the build directory. The default install path
+is /usr/local, so installing will need write privileges there. You can
+configure a different install path by passing
+-DCMAKE_INSTALL_PREFIX=<your_path> to cmake when configuring. To change the
+install path after configuring and building, run
+
+$ ccmake .
+
+in the build directory and modify CMAKE_INSTALL_PREFIX there.

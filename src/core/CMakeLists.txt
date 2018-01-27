@@ -1,0 +1,43 @@
+set(CORE_SRC
+    core/copysource.cpp
+    core/copysourcedevice.cpp
+    core/copysourcefile.cpp
+    core/copysourceshred.cpp
+    core/copytarget.cpp
+    core/copytargetdevice.cpp
+    core/copytargetfile.cpp
+    core/device.cpp
+    core/devicescanner.cpp
+    core/diskdevice.cpp
+    core/fstab.cpp
+    core/lvmdevice.cpp
+    core/operationrunner.cpp
+    core/operationstack.cpp
+    core/partition.cpp
+    core/partitionalignment.cpp
+    core/partitionnode.cpp
+    core/partitionrole.cpp
+    core/partitiontable.cpp
+    core/smartstatus.cpp
+    core/smartattribute.cpp
+    core/volumemanagerdevice.cpp
+)
+
+set(CORE_LIB_HDRS
+    core/device.h
+    core/devicescanner.h
+    core/diskdevice.h
+    core/fstab.h
+    core/lvmdevice.h
+    core/operationrunner.h
+    core/operationstack.h
+    core/partition.h
+    core/partitionalignment.h
+    core/partitionnode.h
+    core/partitionrole.h
+    core/partitiontable.h
+    core/smartattribute.h
+    core/smartstatus.h
+    core/volumemanagerdevice.h
+)
+

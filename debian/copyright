@@ -3,7 +3,7 @@ Upstream-Name: kpmcore
 Source: https://github.com/KDE/kpmcore
 
 Files: *
-Copyright: 2013-2017 Andrius Štikonas <andrius@stikonas.eu>
+Copyright: 2013-2018 Andrius Štikonas <andrius@stikonas.eu>
            2008-2012 Volker Lanz <vl@fidra.de>
            2015-2016 Teo Mrnjavac <teo@kde.org>
            2016 Chantara Tith <tith.chantara@gmail.com>
@@ -33,36 +33,6 @@ License: BSD-2-clause
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-Files: po/uk/kpmcore.po
-Copyright: 2015-2017, Yuri Chornoivan <yurchor@ukr.net>
-License: LGPL-2.1+
-
-Files: po/ca@valencia/kpmcore.po
-Copyright: 2009, 2010, Manuel Tortosa Moreno <manutortosa@gmail.com>
-           2009-2016, Josep Ma. Ferrer <txemaq@gmail.com>
-	   2012-2017, Antoni Bella Pérez <antonibella5@yahoo.com>
-License: LGPL-2.1+
-
-Files: po/bg/kpmcore.po
-Copyright: 2009, Valeriy Voutov <valeriy.voutov@gmail.com>
-           2009-2011, Yasen Pramatarov <yasen@lindeas.com>
-	   2009, сен Праматаров <yasen@lindeas.com>
-License: GPL-3+
-
-Files: po/ca/kpmcore.po
-Copyright: 2009, 2010, Manuel Tortosa Moreno <manutortosa@gmail.com>
-           2009-2016, Josep Ma. Ferrer <txemaq@gmail.com>
-	   2012-2017, Antoni Bella Pérez <antonibella5@yahoo.com>
-License: LGPL-2.1+
-
-License: LGPL-2.1+
- This program is free software; you can redistribute it and/or modify it
- under the terms of the GNU Lesser General Public License as published by the
- Free Software Foundation; version 2.1 of the License, or (at
- your option) any later version.
- .
- On Debian systems, the complete text of version 2.1 of the GNU Lesser
- General Public License can be found in `/usr/share/common-licenses/LGPL-2.1'.
 
 License: GPL-3+
  This program is free software: you can redistribute it and/or modify
@@ -83,7 +53,8 @@ License: GPL-3+
  `/usr/share/common-licenses/GPL-3'.
 
 Files: debian/*
-Copyright: 2016 Jonathan Carter <jonathan@ubuntu.com>
+Copyright: 2018 Alf Gaida <agaida@siduction.org>
+           2016 Jonathan Carter <jonathan@ubuntu.com>
 License: GPL-2+
  This package is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by

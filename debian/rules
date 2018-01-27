@@ -2,11 +2,16 @@
 
 export DH_VERBOSE=1
 
-export PVER=$(shell dpkg-parsechangelog --show-field version | cut -d"-" -f1)
+export LC_ALL=C.UTF-8
+export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
 export DEB_BUILD_MAINT_OPTIONS=hardening=+all
 
 %:
-	dh $@ --with pkgkde_symbolshelper
+	dh ${@} --buildsystem cmake
 
-override_dh_makeshlibs:
-	dh_makeshlibs -- -v$(PVER)
+override_dh_missing:
+	dh_missing --fail-missing
+
+override_dh_auto_configure:
+	dh_auto_configure -- \
+		-DCMAKE_BUILD_TYPE=RelWithDebInfo
