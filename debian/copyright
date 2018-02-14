@@ -53,8 +53,8 @@ License: GPL-3+
  `/usr/share/common-licenses/GPL-3'.
 
 Files: debian/*
-Copyright: 2018 Alf Gaida <agaida@siduction.org>
-           2016 Jonathan Carter <jonathan@ubuntu.com>
+Copyright: 2017-2018 Alf Gaida <agaida@siduction.org>
+           2016      Jonathan Carter <jonathan@ubuntu.com>
 License: GPL-2+
  This package is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
