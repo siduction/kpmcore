@@ -1,8 +1,10 @@
 kpmcore (3.3.1~61-g6eab875-1) unstable; urgency=medium
 
   * New snapshot: v3.3.0-61-g6eab875
+  * Introduced myself as Maintainer
+  * VCS fields point now to git.siduction.org
 
- -- Alf Gaida <agaida@siduction.org>  Fri, 06 Apr 2018 20:04:14 +0200
+ -- Alf Gaida <agaida@siduction.org>  Fri, 06 Apr 2018 20:13:22 +0200
 
 kpmcore (3.3.1~60-gc1f4b36-2) unstable; urgency=medium
 
