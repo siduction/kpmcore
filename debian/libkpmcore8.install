@@ -1,4 +1,2 @@
 usr/lib/*/qt5/plugins/
-usr/share/kservices5/
-usr/share/kservicetypes5/
 usr/lib/*/libkpmcore.so.*

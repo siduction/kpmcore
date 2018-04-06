@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
 Uploaders: Alf Gaida <agaida@siduction.org>
 Build-Depends: cmake,
-               debhelper (>= 11),
+               debhelper (>= 11~),
                extra-cmake-modules,
                libatasmart-dev,
                libblkid-dev (>= 2.30),
