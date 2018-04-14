@@ -1,3 +1,10 @@
+kpmcore (3.3.1~66-g4bcf928-1) unstable; urgency=medium
+
+  * New snapshot: v3.3.0-66-g4bcf928
+  * Bumped Standards to 4.1.4, no changes needed
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 14 Apr 2018 12:32:59 +0200
+
 kpmcore (3.3.1~61-g6eab875-1) unstable; urgency=medium
 
   * New snapshot: v3.3.0-61-g6eab875

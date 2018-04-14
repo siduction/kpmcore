@@ -12,10 +12,10 @@ Build-Depends: cmake,
                libkf5widgetsaddons-dev,
                libparted-dev,
                pkg-config
-Standards-Version: 4.1.3
+Standards-Version: 4.1.4
 Homepage: https://github.com/KDE/kpmcore
 Vcs-Browser: https://git.siduction.org/extra/kpmcore
-Vcs-Git: https://gi.siduction.org/extra/kpmcore.git
+Vcs-Git: https://git.siduction.org/extra/kpmcore.git
 
 Package: libkpmcore8
 Architecture: linux-any
