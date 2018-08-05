@@ -21,6 +21,14 @@ uploadrepo=extra
 
 repository="git@github.com:KDE/kpmcore"
 
+build="yes"
+clean="yes"
+gitcommit="yes"
+push="yes"
+upload="yes"
+dryrun="no"
+
+
 # cleanup function definiton
 cleanup() {
     echo ""
