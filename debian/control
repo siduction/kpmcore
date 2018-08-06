@@ -22,7 +22,8 @@ Vcs-Git: https://git.siduction.org/extra/kpmcore.git
 Package: libkpmcore8
 Architecture: linux-any
 Depends: ${misc:Depends},
-         ${shlibs:Depends}
+         ${shlibs:Depends},
+         libqca-qt5-2-plugins
 Replaces: libkpmcore3,
           libkpmcore4,
           libkpmcore5,
