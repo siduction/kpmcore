@@ -1,2 +1,9 @@
+etc/dbus-1/system.d/org.kde.kpmcore.externalcommand.conf
+etc/dbus-1/system.d/org.kde.kpmcore.applicationinterface.conf
+etc/dbus-1/system.d/org.kde.kpmcore.helperinterface.conf
+usr/share/polkit-1/actions/org.kde.kpmcore.externalcommand.policy
+usr/share/dbus-1/system-services/org.kde.kpmcore.externalcommand.service
+usr/lib/kauth/libexec/kpmcore_externalcommand
+
 usr/lib/*/qt5/plugins/
 usr/lib/*/libkpmcore.so.*

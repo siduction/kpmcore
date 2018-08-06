@@ -7,10 +7,12 @@ Build-Depends: cmake,
                extra-cmake-modules,
                libatasmart-dev,
                libblkid-dev (>= 2.30),
+               libkf5auth-dev,
                libkf5coreaddons-dev,
                libkf5i18n-dev,
                libkf5widgetsaddons-dev,
                libparted-dev,
+               libqca-qt5-2-dev,
                pkg-config
 Standards-Version: 4.1.5
 Homepage: https://github.com/KDE/kpmcore
