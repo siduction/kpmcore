@@ -1,3 +1,9 @@
+kpmcore (3.3.1~280-g449dc1f-1) unstable; urgency=medium
+
+  * New snapshot: v3.3.0-280-g449dc1f
+
+ -- Alf Gaida <agaida@siduction.org>  Wed, 08 Aug 2018 22:58:01 +0200
+
 kpmcore (3.3.1~275-g87dc44d-2) unstable; urgency=medium
 
   * Added dependency libqca-qt5-2-plugins
