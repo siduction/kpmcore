@@ -1,3 +1,9 @@
+kpmcore (3.3.1~287-gee8ee70-1) unstable; urgency=medium
+
+  * New snapshot: v3.3.0-287-gee8ee70
+
+ -- Alf Gaida <agaida@siduction.org>  Wed, 22 Aug 2018 21:22:42 +0200
+
 kpmcore (3.3.1~285-gcbaf624-1) unstable; urgency=medium
 
   * New snapshot: v3.3.0-285-gcbaf624
