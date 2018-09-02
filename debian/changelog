@@ -1,3 +1,15 @@
+kpmcore (3.3.1~293-g4080eef-1) unstable; urgency=medium
+
+  * New snapshot: v3.3.0-293-g4080eef
+
+ -- Alf Gaida <agaida@siduction.org>  Mon, 03 Sep 2018 01:34:55 +0200
+
+kpmcore (3.3.1~290-g7853424-2) unstable; urgency=medium
+
+  * Added build dependency qca-qt5
+
+ -- Alf Gaida <agaida@siduction.org>  Sun, 02 Sep 2018 23:08:51 +0200
+
 kpmcore (3.3.1~290-g7853424-1) unstable; urgency=medium
 
   * New snapshot: v3.3.0-290-g7853424
