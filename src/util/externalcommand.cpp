@@ -20,6 +20,7 @@
 #include "core/device.h"
 #include "core/copysource.h"
 #include "core/copytarget.h"
+#include "core/copytargetbytearray.h"
 #include "core/copysourcedevice.h"
 #include "core/copytargetdevice.h"
 #include "util/globallog.h"
@@ -124,9 +125,11 @@ bool ExternalCommand::start(int timeout)
     if (command().isEmpty())
         return false;
 
-    if (report()) {
+    if (report())
         report()->setCommand(xi18nc("@info:status", "Command: %1 %2", command(), args().join(QStringLiteral(" "))));
-    }
+
+    if ( qEnvironmentVariableIsSet( "KPMCORE_DEBUG" ))
+        qDebug() << xi18nc("@info:status", "Command: %1 %2", command(), args().join(QStringLiteral(" ")));
 
     QString cmd = QStandardPaths::findExecutable(command());
     if (cmd.isEmpty())
@@ -222,8 +225,12 @@ bool ExternalCommand::copyBlocks(CopySource& source, CopyTarget& target)
         if (watcher->isError())
             qWarning() << watcher->error();
         else {
-            QDBusPendingReply<bool> reply = *watcher;
-            rval = reply.argumentAt<0>();
+            QDBusPendingReply<QVariantMap> reply = *watcher;
+            rval = reply.value()[QStringLiteral("success")].toBool();
+
+            CopyTargetByteArray *byteArrayTarget = dynamic_cast<CopyTargetByteArray*>(&target);
+            if (byteArrayTarget)
+                byteArrayTarget->m_Array = reply.value()[QStringLiteral("targetByteArray")].toByteArray();
         }
         setExitCode(!rval);
     };
