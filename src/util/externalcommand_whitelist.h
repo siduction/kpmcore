@@ -21,6 +21,7 @@
 QString allowedCommands[] = {
 // TODO try to remove these later
 QStringLiteral("mv"),
+QStringLiteral("dd"),
 
 // TODO no root needed
 QStringLiteral("lsblk"),

@@ -29,6 +29,7 @@
 #include <QString>
 #include <QStringList>
 #include <QFile>
+#include <QUuid>
 
 #include <algorithm>
 #include <ctime>
@@ -187,8 +188,10 @@ bool ntfs::updateBootSector(Report& report, const QString& deviceNode) const
     std::swap(s[1], s[2]);
 #endif
 
-    ExternalCommand cmd;
-    if (!cmd.writeData(report, QByteArray(s, sizeof(s)), deviceNode, 28)) {
+    ExternalCommand cmd(report, QStringLiteral("dd"), { QStringLiteral("of=") + deviceNode , QStringLiteral("bs=1"), QStringLiteral("count=4"), QStringLiteral("seek=28") });
+
+    cmd.write(QByteArray(s, sizeof(s)));
+    if (!cmd.start()) {
         Log() << xi18nc("@info:progress", "Could not write new start sector to partition <filename>%1</filename> when trying to update the NTFS boot sector.", deviceNode);
         return false;
     }

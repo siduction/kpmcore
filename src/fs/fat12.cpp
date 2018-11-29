@@ -157,7 +157,7 @@ bool fat12::create(Report& report, const QString& deviceNode)
 
 bool fat12::updateUUID(Report& report, const QString& deviceNode) const
 {
-    long int t = time(nullptr);
+    qint64 t = time(nullptr);
 
     char uuid[4];
     for (auto &u : uuid) {
@@ -165,7 +165,9 @@ bool fat12::updateUUID(Report& report, const QString& deviceNode) const
         t >>= 8;
     }
 
-    ExternalCommand cmd;
-    return cmd.writeData(report, QByteArray(uuid, sizeof(uuid)), deviceNode, 39);
+    ExternalCommand cmd(report, QStringLiteral("dd"), { QStringLiteral("of=") + deviceNode , QStringLiteral("bs=1"), QStringLiteral("count=4"), QStringLiteral("seek=39") });
+
+    cmd.write(QByteArray(uuid, sizeof(uuid)));
+    return cmd.start();
 }
 }
