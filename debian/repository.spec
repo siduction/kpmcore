@@ -20,7 +20,6 @@ distribution=unstable
 uploadrepo=extra
 
 repository="git@github.com:KDE/kpmcore"
-commit='b22be9ad9a39f'
 
 build="yes"
 clean="yes"
